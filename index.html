@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floro</title>
+    <link rel="shortcut icon" href="./images/floro1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./min.style.css">
+</head>
+<body class="bg-primary antialiased">
+    <!-- navbar -->
+    <header>
+        <nav class="w-full flex justify-between items-center p-6 md:p-10 lg:px-20 lg:py-8 text-lightGreen">
+            <a href="" class="text-3xl lg:text-4xl font-pacifico">
+                Floro
+            </a>
+            <div class="menuOpenbtn">
+                <button class="block lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="size-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                      
+                </button>
+            </div>
+            <div class="hidden lg:text-2xl font-poppins lg:flex lg:space-x-10">
+                <a href="#flowers" class="hover:decoration-babyPink hover:shadow-2xl hover:underline hover:underline-offset-8 hover:decoration-wavy">Flowers</a>
+                <a href="#decoration" class="hover:decoration-babyPink hover:shadow-2xl hover:underline hover:underline-offset-8 hover:decoration-wavy">Decorative</a>
+                <a href="#Bouqet" class="hover:decoration-babyPink hover:shadow-2xl hover:underline hover:underline-offset-8 hover:decoration-wavy">Bouqet</a>
+                <a href="#contact" class="hover:decoration-babyPink hover:shadow-2xl hover:underline hover:underline-offset-8 hover:decoration-wavy">Contact</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="w-full h-screen fixed bg-lightGreen transform transition-transform translate-x-full duration-500 ease-in-out block inset-0 lg:hidden openMobilemenu">
+        <div class="flex justify-end p-8 closeDivbtn">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-10 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="text-2xl font-poppins flex flex-col justify-center items-center space-y-10 text-white my-28">
+            <a href="#flowers">Flowers</a>
+            <a href="#decoration">Decorative</a>
+            <a href="#Bouqet">Bouqet</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    
+    <!-- hero section -->
+     <section>
+        <div class="px-6 mt-15 lg:mt-20 relative -z-10">
+            <h2 class="text-3xl sm:text-4xl mx-0 md:mx-6 md:text-5xl lg:text-6xl leading-10 sm:leading-12 md:leading-16 lg:leading-20 text-center font-playfairDisplay font-normal text-babyPink ">
+                Unfold the Beauty, <br> Whisper the Secrets of Each Petal
+            </h2>
+            <img src="./images/d3bg.png" class="mx-auto mt-3 md:mt-4 w-72 md:w-80 lg:w-96 h-auto" alt="">
+            <img src="./images/roseLeaves bg.png" alt="" class="absolute w-auto h-16 -z-10 right-0 top-28 sm:h-20 sm:top-28 md:h-24 md:top-32 lg:h-28 lg:top-40">
+            <img src="./images/roseLeaves bg.png" alt="" id="flowers" class="transform scale-x-[-1] absolute w-auto h-16 -z-10 left-0 bottom-[-2] sm:bottom-[-1] sm:h-20 md:bottom-0 md:h-24 lg:h-28">
+        </div>
+     </section>
+
+     <!-- flowers section -->
+     <section>
+        <h3 class="h3">Flowers</h3>
+        <div class="flex flex-row flex-wrap gap-3 justify-evenly items-center mt-8 mx-4 md:mt-16 lg:mt-28">
+            <img src="./images/Flowers/lilly.jpg" alt="Lilly" class="rounded-2xl w-36 lg:w-44 lg:h-60 h-52 shadow-2xl object-cover">
+            <img src="./images/Flowers/redrose.jpg" alt="Red Rose" class="rounded-2xl w-36 lg:w-44 lg:h-60 h-52 shadow-2xl object-cover">
+            <img src="./images/Flowers/Tulips.jpg" alt="Tulips" class="rounded-2xl w-36 lg:w-44 lg:h-60 h-52 shadow-2xl object-cover mt-1">
+          </div>                
+     </section>
+
+    <!-- right leave image -->
+    <div class="relative" id="decoration">
+        <img src="./images/roseLeaves bg.png" alt="" class="absolute w-auto h-16 -z-10 right-0 top-6 sm:h-20 md:h-24 lg:h-28 ">
+    </div>
+
+     <!-- Decorative section -->
+     <section>
+        <h3 class="h3">Decorative</h3>
+        <div class="flex flex-col justify-center items-center lg:flex-row lg:flex-wrap mt-5">
+            <div class="grid grid-cols-2 place-items-end my-4 mx-6 xs:my-16 sm:mx-4 shadow-xl rounded-2xl">
+                <div>
+                    <img src="./images/decore/decores1.jpg" alt="" class="w-40 h-40 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-l-2xl object-cover">
+                </div>
+                <div class="w-40 h-40 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 bg-babyPink flex flex-col justify-center items-center rounded-r-2xl p-5 sm:leading-6 sm:text-center text-xs xs:text-sm sm:font-medium xs:text-left xs:p-6 text-white text-left place-self-start">
+                    Wedding decoration flowers add a touch of elegance and romance, creating a captivating ambiance that enhances every cherished moment.
+                    <button class="md:block hidden px-6 py-2 bg-white rounded-full text-lightGreen font-medium capitalize mt-8 hover:bg-lightGreen hover:text-white">
+                        show more
+                    </button>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 place-items-end my-4 mx-6 xs:my-16 sm:mx-4 shadow-xl rounded-2xl">
+                <div class="w-40 h-40 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 bg-babyPink flex flex-col justify-center items-center rounded-l-2xl p-5 sm:leading-6 sm:text-center text-xs xs:text-sm sm:font-medium xs:text-left xs:p-6 text-white text-left place-self-start">
+                    Flask decoration flowers bring a chic and modern touch, transforming simple containers into stunning centerpieces.
+                    <button class="md:block hidden px-6 py-2 bg-white rounded-full text-lightGreen font-medium capitalize mt-8 hover:bg-lightGreen hover:text-white">
+                        show more
+                    </button>
+                </div>
+                <div>
+                    <img src="./images/decore/decores2.jpg" alt="" class="w-40 h-40 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-r-2xl object-cover">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 place-items-end my-4 mx-6 xs:my-16 sm:mx-4 lg:my-0 shadow-xl rounded-2xl">
+                <div>
+                    <img src="./images/decore/decores3.jpg" alt="" class="w-40 h-40 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-l-2xl object-cover">
+                </div>
+                <div class="w-40 h-40 xs:w-52 xs:h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 bg-babyPink flex flex-col justify-center items-center rounded-r-2xl p-5 sm:leading-6 sm:text-center text-xs xs:text-sm sm:font-medium xs:text-left xs:p-6 text-white text-left place-self-start">
+                    Dining table decoration flowers infuse the setting with grace and charm, making every meal an exquisite experience.
+                    <button class="md:block hidden px-6 py-2 bg-white rounded-full text-lightGreen font-medium capitalize mt-8 hover:bg-lightGreen hover:text-white">
+                        show more
+                    </button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- left leave image -->
+    <div class="relative" id="Bouqet">
+        <img src="./images/roseLeaves bg.png" alt="" class="transform scale-x-[-1] absolute w-auto h-16 -z-10 left-0 top-2 sm:h-20 md:top-3 md:h-24 lg:h-28">
+    </div>
+
+    <!-- Bouqet section -->
+    <section>
+        <h3 class="h4">Bouqet</h3>
+        <div class="grid grid-cols-2 place-items-center mt-10 xs:mt-16 sm:mx-10 md:mx-20">
+            <div class="w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 bg-slate-400 lg:bg-slate-300 relative">
+                <img src="./images/bouqe/desgin 2.jpg" alt="" class="absolute left-5 sm:left-7 top-5 sm:top-7 right-0 w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 shadow-2xl object-cover">
+            </div>
+
+            <div class="w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 bg-slate-400 lg:bg-slate-300 relative">
+                <img src="./images/bouqe/desgin 6.jpg" alt="" class="absolute top-5 sm:top-7 right-5 sm:right-7  w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 shadow-2xl object-cover">
+            </div>
+
+            <div class="col-span-2 mx-auto w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 mt-16 xs:mt-18 sm:mt-24 md:mt-28 bg-slate-400 lg:bg-slate-300 shadow-2xl relative">
+                <img src="./images/bouqe/desgin 1.jpg" alt="" class="absolute bottom-5 sm:bottom-7 right-0 w-28 h-28 xs:w-32 xs:h-32 sm:w-40 sm:h-40 md:w-60 md:h-60  object-cover">
+            </div>
+        </div>                
+     </section>
+
+    <!-- right leave image -->
+    <div class="relative" id="contact">
+        <img src="./images/roseLeaves bg.png" alt="" class="absolute w-auto h-16 -z-10 right-0 top-6 sm:h-20 md:h-24 lg:h-28 ">
+    </div>
+    
+    <!-- contact form -->
+    <section>
+        <div class="mt-32 my-10">
+            <div class="flex flex-col justify-center items-center">
+                <button class="font-medium text-lg font-poppins bg-lightGreen text-white px-6 py-2 rounded-full">Contact</button>
+            </div>
+            <div class="flex flex-col gap-2 mx-10 mt-10 xs:mx-20 sm:mx-28 md:mx-36 lg:mx-48">
+                <label class="font-medium mt-4 sm:text-lg lg:text-xl text-lightGreen" for="">Name</label>
+                <input type="text" placeholder="Enter Your Good Name" class="border-b-2 border-dotted  border-lightGreen placeholder:text-slate-500 outline-0 mt-1 text-babyPink">
+                <label class="font-medium mt-4 sm:text-lg lg:text-xl text-lightGreen" for="">Phone Number</label>
+                <input type="number" placeholder="Enter Phone Number" class="border-b-2 border-dotted border-lightGreen placeholder:text-slate-500 outline-0 mt-1 text-babyPink">
+                <label class="font-medium mt-4 sm:text-lg lg:text-xl text-lightGreen" for="">Email</label>
+                <input type="email" name="" id="" placeholder="Enter Email" class="border-b-2 border-dotted border-lightGreen placeholder:text-slate-500 outline-0 mt-1 text-babyPink">
+                <textarea 
+                rows="6" 
+                class="mt-4 px-2 py-2 rounded-xl border-lightGreen outline outline-lightGreen border text-babyPink placeholder:text-slate-500" 
+                placeholder="Message"
+                ></textarea>
+                <div class="flex flex-col justify-center items-center mt-2">
+                    <button class="font-medium text-lg font-poppins bg-babyPink hover:bg-[#693c6f] text-white px-6 py-2 rounded-xl w-full xs:w-32 sm:w-36 md:w-40 lg:w-44">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- left leave image -->
+    <div class="relative">
+        <img src="./images/roseLeaves bg.png" alt="" class="transform scale-x-[-1] absolute w-auto h-16 -z-10 left-0 bottom-0.5 sm:h-20 md:h-24 lg:h-28">
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-lightGreen">
+        <div class="p-5 xs:p-10 text-white grid grid-cols-1 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 md:place-items-start md:p-16 lg:p-20">
+            <div class="flex flex-col gap-6 lg:gap-10 my-3">
+                <h2 class="text-3xl font-pacifico">Floro</h2>
+                <p class="">Shop fresh and beautiful flowers with Floro, available both online and offline. Order online for doorstep delivery or visit our store for a personalized experience. Choose from a variety of stunning floral arrangements to make every moment special! </p>
+                <div class="flex flex-row gap-5 items-center">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-10 h-10" viewBox="0 0 48 48">
+                            <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-10 h-10" viewBox="0 0 48 48">
+                            <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-10 h-10" viewBox="0 0 48 48">
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="mt-8 md:mt-16 md:justify-self-center">
+                <h3 class="font-poppins font-medium text-lg">Address</h3>
+                <div class="mt-2 lg:mt-4">
+                    <div class=" flex flex-col gap-1">
+                        <p>D.no: 8/561, Rajuangar,</p>
+                        <p>Ashoka, Kurnool, AP - 508658.</p>
+                        <p>Contact : 325648923, 325648923</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mt-10 md:mt-16">
+                <h3 class="font-poppins font-medium text-lg">Useful</h3>
+                <div class="flex flex-col gap-3 mt-5">
+                    <a href="">
+                        <div class="flex flex-row gap-3 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p>Home</p>
+                        </div>
+                    </a>
+                    <a href="#flowers">
+                        <div class="flex flex-row gap-3 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p>Flowers</p>
+                        </div>
+                    </a>
+                    <a href="#decoration">
+                        <div class="flex flex-row gap-3 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p>Decorative</p>
+                        </div>
+                    </a>
+                    <a href="#Bouqet">
+                        <div class="flex flex-row gap-3 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p>Bouqet</p>
+                        </div>
+                    </a>
+                    <a href="#contact">
+                        <div class="flex flex-row gap-3 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <p>Contact</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center py-5 sm:py-8">
+            <p class="text-white text-sm">&copy; 2025 Floro. All rights reserved.</p>
+        </div>
+    </footer>
+   
+    <script src="./index.js"></script>
+</body>
+</html>
